@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #121212;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url(_.gif);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.login-container {
+    display: flex;
+    width: 1000px;
+    height: 500;
+    background-color: #1e1e1e;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 0 10px 5px rgb(36, 5, 175);
+}
+
+.ImagemQuadrado {
+    width: 100%;
+}
+
+.ImagemQuadrado:hover {
+    -webkit-transform: scale(1, 1);
+    transform: scale(1.15);
+}
+
+.left-panel {
+    width: 75%;
+    background: linear-gradient(135deg, rgb(113, 5, 156) 0%, rgb(12, 5, 109) 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: contain;
+    background-attachment: fixed;
+    background-size: no-repeat;
+}
+
+
+.right-panel {
+    text-align: center;
+    width: 50%;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #242424;
+
+
+}
+
+h1 {
+    color: #fff;
+    font-size: 24px;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.login-form h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.login-form h1 span {
+    color: #3b0aad;
+}
+
+.login-form input {
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: none;
+    background-color: #333;
+    color: #fff;
+}
+
+.login-form input::placeholder {
+    color: #999;
+}
+
+
+.btn {
+    width: 100%;
+    padding: 15px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn.login {
+    background-color: #5443e7;
+    color: #fff;
+}
+
+.btn.login:hover {
+    -webkit-transform: scale(1, 1);
+    transform: scale(1.05);
+    background-color: #6a11cb;
+}
+
+.btn.signup {
+    background-color: #5443e7;
+    color: #fff;
+}
+
+.btn.signup:hover {
+    -webkit-transform: scale(1, 1);
+    transform: scale(1.05);
+    background-color: #6a11cb;
+}
+
+
+.social-icons {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.social-icons a {
+    color: #fff;
+    margin: 0 10px;
+    font-size: 24px;
+}
+
+.social-icons a:hover {
+    color: #6a11cb;
+}
