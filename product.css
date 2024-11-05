@@ -1,14 +1,16 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #f0f8ff; 
+    background-color: darkgray; 
     margin: 0;
     padding: 0;
+    scroll-padding-bottom: auto;
+
 }
 
 header {
-    background-color: #1e90ff; 
+    background-color: gray; 
     color: white;
-    padding: 20px 0;
+    padding: 5px ;
     text-align: center;
 }
 
@@ -22,13 +24,13 @@ header {
 
 .product {
     background-color: #ffffff;
-    border: 1px solid #b0c4de; 
+    border: 1px solid #b0c4de;      
     border-radius: 10px;
     padding: 15px;
     margin: 10px;
     width: 30%;
     text-align: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(225, 0, 255, 0.1);
     
 }
 
@@ -45,22 +47,22 @@ header {
 
 .product h2 {
     font-size: 24px;
-    color: #4682b4; 
+    color: #5443e7; 
 }
 
 .product p {
     font-size: 16px;
-    color: #696969;
+    color: #5443e7;
 }
 
 .product .price {
     font-size: 20px;
-    color: #1e90ff; 
+    color: darkviolet; 
     margin: 10px 0;
 }
 
 .product button {
-    background-color: #1e90ff; 
+    background-color: darkviolet; 
     color: white;
     border: none;
     padding: 10px 20px;
@@ -70,8 +72,43 @@ header {
 }
 
 .product button:hover {
-    background-color: #4169e1;
+    background-color: purple;
     -webkit-transform: scale(1.1);
     transform: scale(1.05);
 }
+
+.texto {
+    color: rgb(255, 255, 255);
+    flex-wrap: wrap;
+    padding: 20px;
+    vertical-align: middle;
+}
+
+.texto {
+    animation: appear 1ms ease-in-out;
+    animation-timeline: view();
+    animation-range: cover 0% cover 50%;
+  }
+  
+  @keyframes appear {
+    from {
+      opacity: 0;
+      translate: -100vw 0;
+    }
+    
+    to {
+      opacity: 1;
+      translate: 0 0;
+    }
+  }
+
+.scroll-text {
+    background-color: purple;
+    
+}
+
+footer {
+    margin: 50px;
+}
+
 
